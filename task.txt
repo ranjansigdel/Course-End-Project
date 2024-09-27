@@ -1,0 +1,7 @@
+The following tasks outline the process of implementing CI/CD using GitHub
+Actions and Jenkins:
+1. 2. 3. 4. 5. Create a code repository on GitHub
+Create a GitHub Actions pipeline to perform continuous integration
+Configure Tomcat Apache for automated code deployment
+Integrate the GitHub Actions pipeline to invoke the Jenkins pipeline
+Invoke pipeline to validate automated deployment
