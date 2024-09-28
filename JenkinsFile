@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/ranjansigdel/Course-End-Project.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm install'  // or your project's build command
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm test'  // or your project's test command
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'scp -r * tomcat@your-server-ip:/path/to/tomcat/webapps/'
+            }
+        }
+    }
+}
