@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'scp -r * tomcat@your-server-ip:/path/to/tomcat/webapps/'
+                sh 'scp -r * tomcat@9090:/path/to/tomcat/webapps/'
             }
         }
     }
