@@ -13,6 +13,6 @@ jobs:
         uses: appleboy/jenkins-action@master
         with:
           url: 'http://localhost:8080/job/Final-Project/build'
-          user: ${{ secrets.ranjansigdel }}
+          user: ${{ secrets.JENKINS_USERNAME }}
           token: ${{ secrets.JENKINS_API_TOKEN }}
 
