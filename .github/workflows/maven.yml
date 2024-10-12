@@ -12,7 +12,7 @@ jobs:
       - name: Trigger Jenkins Job
         uses: appleboy/jenkins-action@master
         with:
-          url: 'https://c0db-82-36-150-19.ngrok-free.app/job/Final-Project/build'
+          url: 'https://351a-82-36-150-19.ngrok-free.app/job/Final-Project/'
           user: ${{ secrets.JENKINS_USERNAME }}  # Jenkins Username from Secrets
           token: ${{ secrets.JENKINS_API_TOKEN }}  # Jenkins API Token from Secrets
           job: 'Final-Project'
